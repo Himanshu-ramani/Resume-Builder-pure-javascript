@@ -422,7 +422,7 @@ let opt = {
   jsPDF:        {  format: 'a4', orientation: 'portrait',pagesplit: true, }
 };
 
-await html2pdf().set(opt).from(element).save();
+html2pdf().set(opt).from(element).save();
 
 for (const ele of btn ) {
    ele.style.display = "none"
